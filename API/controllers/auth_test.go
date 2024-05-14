@@ -41,6 +41,7 @@ func TestCreateBulkUsersInvalidBody(t *testing.T) {
 	message, exists := response["message"].(string)
 	assert.True(t, exists)
 	assert.Equal(t, "Invalid request", message)
+
 }
 
 func TestCreateBulkUsers(t *testing.T) {
